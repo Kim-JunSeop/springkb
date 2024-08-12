@@ -6,6 +6,7 @@ import java.util.Locale;
 
 import com.multi.mvc.model.vo.User;
 import lombok.Setter;
+import org.apache.commons.dbcp2.BasicDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class HomeController {
 	@Autowired // bean을 자신의 객체로 주입하는 방법
 	private User user1;
 
-	@Autowired
+	@Autowired 
 	private User user2;
 
 
@@ -54,7 +55,20 @@ public class HomeController {
 	@Setter(onMethod_ = {@Autowired, @Qualifier("user4")})
 	private User testUser4;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+
+	// Bean을 setter로 가져오는 방식
+	private TestBean testBean;
+	@Autowired
+	@Qualifier("testBean")
+	public void setTestBean( TestBean testBean){
+		this.testBean = testBean;
+	}
+
+	// Bean을 setter로 가져오는 방식2 : lombok 단축표현!
+	@Setter(onMethod_ = {@Autowired, @Qualifier("dataSource")})
+	private BasicDataSource myDataSource;
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
 
 		// 1. xml로 선언한 bean을 model로 담아 view로 전달
@@ -63,7 +77,17 @@ public class HomeController {
 		model.addAttribute("testUser3", testUser3);
 		model.addAttribute("testUser4", testUser4);
 
+
+		// 2. Properties에서 읽어온 사용자 bean 출력
+		model.addAttribute("testBean", testBean);
+
+		// 3. bean으로 생성한 dataSource 가져오기
+		String className = myDataSource.getDriverClassName();
+		String userName = myDataSource.getUserName();
+		model.addAttribute("className", className);
+		model.addAttribute("userName", userName);
+
 		return "home";
 	}
-
+	
 }

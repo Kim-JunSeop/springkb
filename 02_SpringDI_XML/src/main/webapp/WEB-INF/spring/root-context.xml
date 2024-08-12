@@ -12,20 +12,23 @@
     <!-- Spring java 파일로 부터 어노테이션을 스캔하여 bean을 생성하는 명령 -->
     <context:component-scan base-package="com.multi.mvc"/>
 
-    <import resource="pet-context.xml"/>
+    <!-- xml 파일을 로드(include)하는 방법 -->
+    <!--	<import resource="pet-context.xml"/>-->
+    <import resource="user-context.xml"/>
 
-    <context:property-placeholder location="classpath:/common.properties, classpath:db.properties"/>
-
+    <!-- Resources에서 설정된 프로퍼티를 가져오는 방법 -->
+    <!--	<context:property-placeholder location="classpath*:/**/*.properties"/>-->
+    <context:property-placeholder
+            location="classpath:/common.properties, classpath:db.properties"/>
 
     <!-- Resources에서 가져온 프로퍼티를 통해 dataSource Bean 생성하는 방법-->
     <!-- dataSource는 Connection Pool을 유지하기 위한 DB 관련 모듈-->
     <!-- https://commons.apache.org/proper/commons-dbcp/configuration.html -->
-
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
           p:driverClassName="${db.driver}"
           p:url="${db.url}"
           p:username="${db.username}"
-          p:password="%{db.password}"
+          p:password="${db.password}"
           destroy-method="close"
           p:maxTotal="10"
     />
@@ -34,5 +37,4 @@
     <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="locations" value="classpath*:/*.properties" />
     </bean>
-
 </beans>

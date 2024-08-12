@@ -1,11 +1,11 @@
 
-Š
-java:S6813"BRemove this field injection and use constructor injection instead.(¡ó¸ˆþÿÿÿÿ8–Ž±ª”2J$dcfc40e8-298d-4cae-8477-ea6ed1b8489d
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8—Ž±ª”2J$54ec7452-716b-4803-8a5f-c38720a0c1d8
-…
-java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄÞ8—Ž±ª”2J$e8f98d32-c352-4640-ac01-f285e025749d
-~	java:S125""<This block of commented-out lines of code should be removed.(‘Ê©Ã8˜Ž±ª”2J$701719f6-1195-4169-88eb-863475bbdf00
-ƒ	java:S125."<This block of commented-out lines of code should be removed.(à¡Ÿüøÿÿÿÿ8™Ž±ª”2J$396bcc78-b4b8-4fa6-b7d3-7d2415e766e6
-
-java:S44889"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ž–û‚ùÿÿÿÿ8šŽ±ª”2J$f23c2d06-2764-4208-aea2-2c14bd4060f9
+d
+java:S6813"BRemove this field injection and use constructor injection instead.(¡ó¸ˆþÿÿÿÿ8õéØ«”2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8öéØ«”2
+_
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄÞ8öéØ«”2
+X	java:S125#"<This block of commented-out lines of code should be removed.(‘Ê©Ã8þéØ«”2
+]	java:S125/"<This block of commented-out lines of code should be removed.(à¡Ÿüøÿÿÿÿ8€êØ«”2
+j
+java:S4488G"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ž–û‚ùÿÿÿÿ8‡êØ«”2

@@ -17,7 +17,6 @@
 <div>user2 : ${user2.name}, ${user2.age}, ${user2.pet.name}</div>
 <div>testUser3 : ${testUser3.name}, ${testUser3.age}, ${testUser3.pet.name}</div>
 <div>testUser4 : ${testUser4.name}, ${testUser4.age}, ${testUser4.pet.name}</div>
-
 <div>cat : ${cat.name}, ${cat.age}</div>
 
 

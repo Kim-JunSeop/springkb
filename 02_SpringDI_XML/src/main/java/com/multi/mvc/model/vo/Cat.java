@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Cat implements Pet {
 	private String name;
 	private int age;
@@ -15,4 +15,5 @@ public class Cat implements Pet {
 	public String speak() {
 		return "왜용~~~?";
 	}
+
 }
