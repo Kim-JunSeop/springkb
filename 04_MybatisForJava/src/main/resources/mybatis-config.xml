@@ -29,8 +29,8 @@
 	<!-- - Spring에서는 자동 셋팅 방법 존재함 -->
 	<typeAliases>
 		<typeAlias type="com.multi.mybatis.member.model.vo.Member" alias = "Member"/>
-<!--		<typeAlias type="com.multi.mybatis.board.model.vo.Board" alias = "Board"/>-->
-<!--		<typeAlias type="com.multi.mybatis.board.model.vo.Reply" alias = "Reply"/>-->
+		<typeAlias type="com.multi.mybatis.board.model.vo.Board" alias = "Board"/>
+		<typeAlias type="com.multi.mybatis.board.model.vo.Reply" alias = "Reply"/>
 	</typeAliases>
 
 
@@ -61,6 +61,6 @@
 	<!-- ★★★★★ mapper를 추가하는 곳, Spring에서는 자동추가 예정 -->
 	<mappers>
 		<mapper resource="mappers/member/member-mapper.xml" />
-<!--		<mapper resource="mappers/board/board-mapper.xml" />-->
+		<mapper resource="mappers/board/board-mapper.xml" />
 	</mappers>
 </configuration>

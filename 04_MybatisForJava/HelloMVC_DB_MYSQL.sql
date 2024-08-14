@@ -63,11 +63,11 @@ SELECT * FROM MYBATIS.MEMBER;
 
 
 CREATE TABLE mybatis.board (
-    bno             BIGINT AUTO_INCREMENT,
-    mno             BIGINT,
-	title           VARCHAR(200),
-	content         VARCHAR(3000),
-	type            VARCHAR(100),
+    bno               BIGINT AUTO_INCREMENT,
+    mno               BIGINT,
+	title             VARCHAR(200),
+	content           VARCHAR(3000),
+	type              VARCHAR(100),
 	original_filename VARCHAR(100),
 	renamed_filename VARCHAR(100),
 	readcount       INT DEFAULT 0,
@@ -138,7 +138,7 @@ SELECT * FROM board;
 -- ----------------------- REPLY 관련 테이블 -------------------------
 -- ----------------------------------------------------------------
 
-CREATE TABLE MYBATIS.REPLY(
+CREATE TABLE mybatis.reply(
   rno BIGINT PRIMARY KEY AUTO_INCREMENT,
   bno BIGINT,
   mno BIGINT,

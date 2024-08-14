@@ -743,3 +743,11 @@ w
 G.idea/sonarlint/issuestore/a/c/acf13d4d9a076bf59f27b7604c4e7db3929eeb94,9\3\9302d96f6255eee2767393e1ee6db1358fefbde3
 w
 G.idea/sonarlint/issuestore/a/d/ad4bd8cff22d4cd086d6b5b0c181fa180937db36,5\b\5b038a255a060ad98015f36b74a4d0fe30954031
+v
+F04_MybatisForJava/src/main/java/com/multi/mybatis/common/PageInfo.java,6\d\6de73458004260371e678745192e32d06a517e69
+s
+C04_MybatisForJava/src/main/resources/mappers.board/board-mapper.xml,f\c\fc1f3fba743d8f4ac8f9c633aa2a40e93ed2ecaa
+‡
+W04_MybatisForJava/src/main/java/com/multi/mybatis/board/model/service/BoardService.java,5\e\5e84382d0de7174787ed55a579b078ead2fb6c20
+
+O04_MybatisForJava/src/main/java/com/multi/mybatis/board/model/dao/BoardDao.java,e\8\e8178ccdaeffd65e8f485d7af9ea059fbdcdebaa
