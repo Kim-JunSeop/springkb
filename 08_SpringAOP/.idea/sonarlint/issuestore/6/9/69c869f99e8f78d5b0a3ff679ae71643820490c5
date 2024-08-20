@@ -1,0 +1,21 @@
+
+n
+java:S1192?"SDefine a constant instead of duplicating this literal "member/joinSuccess" 3 times.(Óýüîúÿÿÿÿ
+m
+java:S1192A"RDefine a constant instead of duplicating this literal "member/joinFailed" 3 times.(…¨Æ†ùÿÿÿÿ
+€
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+V	java:S125#"<This block of commented-out lines of code should be removed.(¦†Š«ûÿÿÿÿ
+W
+java:S2441("<Make "Member" serializable or don't store it in the session.(™‡ÉÃüÿÿÿÿ
+Q	java:S125S"<This block of commented-out lines of code should be removed.(ÞƒÙ²
+
+java:S1130c"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(¢Ù ¸
+4
+java:S2119e"Save and re-use this "Random".(Ç˜„ù
+
+java:S1130s"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(¨³ÿÐ
+4
+java:S2119u"Save and re-use this "Random".(‰·¬

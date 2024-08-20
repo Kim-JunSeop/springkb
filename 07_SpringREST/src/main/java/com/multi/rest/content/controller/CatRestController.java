@@ -3,6 +3,8 @@ package com.multi.rest.content.controller;
 
 import com.multi.rest.content.model.vo.Cat;
 import com.multi.rest.content.service.CatService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,14 +12,28 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//@RestController : Rest 요청을 받는 Controller로 지칭하는 어노테이션,
+//					무조건 REST 방식(=View를 사용하지 않음)으로 요청과 응답을 처리한다.
+//					Handler method의 ResponseBody가 자동으로 붙는다.
+//					Controller로 해도 기능상 문제는 없다.
+//@RequestMapping : 최상위 리소스를 지칭하는 url, 현재는 /animal/cat(고양이) 정보만 다루는 REST로 가정
+
+// postman 사용법 참고 블로그 : https://binit.tistory.com/17
+
+// Swagger 참조 블로그
+// https://twofootdog.github.io/Spring-Spring-MVC%EC%97%90-Swagger-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/
+
+
 // 해당 클래스에 해당하는 핸들러는 /cat이 기본 URL로 설정됨
 @RequestMapping("/cat")
 @RestController
+@Api(value = "CatRestController", tags = "고양이 정보")
 public class CatRestController {
 
     @Autowired
     private CatService catService;
 
+    @ApiOperation(value = "고양이 정보 조회", notes = "고양이의 모든 정보를 반환")
     @CrossOrigin(origins = "http://localhost", maxAge = 3000)
     @GetMapping("") // @GetMapping : REST에서 read할때 활용하는 어노테이션
     public ResponseEntity<List<Cat>> getCatAllInfo(
